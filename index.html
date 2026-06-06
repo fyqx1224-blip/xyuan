@@ -1,7 +1,6 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ZenCode VIP · 甲戌丙子坤造 · 典藏融合版</title><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700;900&family=Noto+Sans+SC:wght@300;400;500&family=Ma+Shan+Zheng&display=swap" rel="stylesheet"><style>
 :root{
-  --p:#B0B8C8; /* 庚金主色调：冷锻银 */
-  --pb:#D8DEE8;
+  --p:#B0B8C8; --pb:#D8DEE8;
   --pd:rgba(176,184,200,0.15); --pg:rgba(176,184,200,0.3);
   --bg:#0A0D14; --bg2:#12151C;
   --text:#E0E4E8; --text-d:rgba(224,228,232,0.65);
@@ -14,7 +13,6 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
 ::-webkit-scrollbar-track{background:rgba(255,255,255,0.02)}
 ::-webkit-scrollbar-thumb{background:rgba(176,184,200,0.35);border-radius:2px}
 
-/* ══ 分层背景 canvas ══ */
 #cvBg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
 #cvMetal{position:fixed;bottom:0;left:0;width:100%;height:45vh;z-index:1;pointer-events:none;opacity:0.9}
 #paperCanvas{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:2;pointer-events:none;opacity:0.35}
@@ -129,6 +127,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
 .wx-legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
 .wx-note{font-family:'Noto Sans SC',sans-serif;font-size:0.66rem;color:rgba(224,228,232,0.38);text-align:center;margin-top:10px;letter-spacing:0.12em}
 
+/* 十神CSS柱状图样式 (支持10行分阴阳) */
 .tg-chart-box{background:rgba(14,17,24,0.6);border:1px solid rgba(176,184,200,0.15);border-radius:8px;padding:32px 36px;margin:24px 0;backdrop-filter:blur(16px)}
 .tg-row{display:flex;align-items:center;margin-bottom:12px;gap:16px}
 .tg-row:last-child{margin-bottom:0}
@@ -630,49 +629,22 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
   </div>
 
   <div class="card">
-    <div class="card-ti">学业特质分析：非标智慧与工程基因</div>
-    <p>八字中"土"是你的印星（代表学历和学习能力）。但前面说过，你的八字"忌土"（土会埋金灭火）。这说明：<strong>传统的应试教育体制（正印）往往会成为束缚你天才想法的牢笼。</strong>你真正的天赋在于地支辰土（偏印）与华盖星的叠加。你的大脑就像一台极其精密的服务器，非常擅长处理那些非标准的、极具抽象性和底层逻辑的事物，比如：高精尖技术、数据架构与系统开发分析。</p>
-    <p>你的学习驱动力极强地受到"用神（木火）"也就是"财富变现（木）与成就感（火）"的影响。只要你能看到这项技术能立刻变现或解决实际危机，你的学习效率将呈指数级飙升。</p>
+    <div class="card-ti">学业特质分析：非标智慧与精研基因</div>
+    <p>八字中"土"是你的印星（代表学历和学习能力）。但前面说过，你的八字"忌土"（土会埋金灭火）。这说明：<strong>传统的应试教育体制（正印）往往会成为束缚你天才想法的牢笼。</strong>你真正的天赋在于地支辰土（偏印）与华盖星的叠加。你的大脑就像一台极其精密的显微镜，非常擅长处理那些极具门槛、需要深挖底层逻辑的学科，比如：医学、高精尖科研、或者是精密工程与系统分析。</p>
+    <p>你的学习驱动力极强地受到"用神（木火）"也就是"财富变现（木）与成就感（火）"的影响。只要你能看到这项技术能立刻解决实际危机，你的学习效率将呈指数级飙升。</p>
     <div class="authority-box">
       <div class="authority-box-hd">命理依据索引</div>
-      <div class="authority-item"><div class="authority-num">①</div><div class="authority-text">《三命通会》："偏印逢华盖，必主艺术、技艺或玄学出众"——日支辰土兼具偏印与华盖，点明了你跨界技术与复杂逻辑的独特天赋。</div></div>
+      <div class="authority-item"><div class="authority-num">①</div><div class="authority-text">《三命通会》："偏印逢华盖，必主艺术、技艺或玄学出众"——日支辰土兼具偏印与华盖，点明了你跨界精研与掌握冷门/高门槛技术的独特天赋。</div></div>
       <div class="authority-item"><div class="authority-num">②</div><div class="authority-text">《滴天髓》："魁罡聚众，必有威权"——庚辰魁罡日，赋予了你不服输的极客精神与钻研到底的韧性。</div></div>
-    </div>
-  </div>
-
-  <div class="card" style="border-color:rgba(136,176,139,0.3)">
-    <div class="card-ti" style="color:var(--wood)">精准专业方向推荐（喜用神导向）</div>
-    <p style="margin-bottom:16px">根据你的命局喜用（木火）与天赋结构（伤官+偏印+魁罡），以下专业赛道与你的底层能量高度契合：</p>
-    <div class="major-grid">
-      <div class="major-card fire-card">
-        <div class="major-ti">🔥 计算机科学 / 软件工程</div>
-        <div class="major-tag">火属性 · 七杀落地 · 技术变现</div>
-        <div class="major-desc">互联网与数字技术属火，最能激活你的七杀（执行力）与伤官（技术创新力）。你在这类赛道里有极高的上限，因为你的羊刃（精准）和偏印（深度洞察）让你能做到连"技术流"都叹服的系统架构级工作。</div>
-      </div>
-      <div class="major-card wood-card">
-        <div class="major-ti">🌿 国际商务 / 跨境贸易</div>
-        <div class="major-tag">木属性 · 偏财通道 · 流量变现</div>
-        <div class="major-desc">木主生发与流通，跨国界的商贸流转是你偏财（甲木）的正面出口。结合你伤官的智慧降维，可以在跨境电商、出海营销或国际供应链领域实现极为精准的利润截取。</div>
-      </div>
-      <div class="major-card fire-card">
-        <div class="major-ti">🔥 数据分析 / 金融工程</div>
-        <div class="major-tag">火木兼备 · 伤官量化 · 正财落袋</div>
-        <div class="major-desc">你的伤官配偏印，天生具备量化分析的极高天赋。在数据驱动决策（Data Science）或金融衍生品定价（Quant Finance）领域，你的"羊刃精准+伤官洞察"能发挥出远超同行的系统性优势。</div>
-      </div>
-      <div class="major-card water-card">
-        <div class="major-ti">💧 产品设计 / UX/UI</div>
-        <div class="major-tag">水生木 · 伤官表达 · 美学商业化</div>
-        <div class="major-desc">伤官天生的审美力与反传统思维，是优秀产品设计师的核心DNA。你能感受到别人无法感受到的"体验细节的不合理性"，并用你的羊刃精准地将其修正。属于创意变现型的高价值赛道。</div>
-      </div>
     </div>
   </div>
 
   <div class="oppo-box" style="border-color:rgba(176,184,200,0.5)">
     <h3 style="color:var(--pb)">💻 高维学习法：造物主视角的降维打击</h3>
     <ul class="strat-list">
-      <li><strong>项目驱动式学习（合财造物）：</strong>不要为了学而学！你想掌握某种核心技术或商业逻辑，最好的方法就是直接去主导一个有挑战性的实战项目。在实战中解决BUG、优化流程，是你的绝对领域。</li>
+      <li><strong>实战驱动式学习（合财造物）：</strong>不要为了学而学！你想掌握某种核心技术或商业逻辑，最好的方法就是直接去主导一个有挑战性的实战项目（如直接参与疑难病患的治疗方案制定）。在实战中解决BUG、优化流程，是你的绝对领域。</li>
       <li><strong>剥离冗余信息（羊刃切割）：</strong>你的时间极其宝贵。在面对庞杂的信息流时，用你的羊刃（手术刀）剔除所有毫无意义的废话，只抓核心架构或底层公式。</li>
-      <li><strong>教学相长（伤官输出）：</strong>伤官最喜"表达"。强迫自己把刚学会的知识用最简单的语言写出来（如博客、技术文档），是触发你伤官才华爆发的最快捷径。输出倒逼输入，你的学习速度将超乎你自己的预期。</li>
+      <li><strong>教学相长（伤官输出）：</strong>伤官最喜"表达"。强迫自己把刚学会的知识用最精确的语言输出（如带教、写研究论文），是触发你伤官才华爆发的最快捷径。输出倒逼输入，你的学习速度将超乎你自己的预期。</li>
     </ul>
   </div>
 
@@ -680,11 +652,11 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <div class="wealth-tier-bar" style="background:linear-gradient(180deg,var(--wood) 0%,var(--fire) 100%)"></div>
     <div class="wealth-tier-body" style="padding:24px 30px">
       <div class="card-ti" style="margin-bottom:12px;color:var(--wood)">认知跃迁爆发节点（岁运加持）</div>
-      <p style="margin-bottom:8px">在核心技术攻坚或搭建个人平台的路上，以下节点必须全力冲刺：</p>
+      <p style="margin-bottom:8px">在核心技术攻坚或搭建个人专业壁垒的路上，以下节点必须全力冲刺：</p>
       <ul class="strat-list">
-        <li><strong>2024 甲辰年（财星破印）：</strong>偏财透出，辰戌冲动印库。这一年是你的底层技能、专业资质或核心业务架构发生质变的年份，旧有的知识体系被打破重组。</li>
-        <li><strong>2025 乙巳年（木火通明）：</strong>正财生七杀。极度利于通过你的技术手腕获得官方资源倾斜或权威资质，在专业领域确立权威。</li>
-        <li><strong>2026 丙午年（杀刃交锋）：</strong>这是你将手头技术产品进行极高强度压测、并推向市场前台的核爆之年。</li>
+        <li><strong>2024 甲辰年（财星破印）：</strong>偏财透出，辰戌冲动印库。这一年是你的底层技能、专业资质发生质变的年份，旧有的知识体系被打破重组。</li>
+        <li><strong>2025 乙巳年（木火通明）：</strong>正财生七杀。极度利于通过你的技术手腕获得官方资源倾斜或权威资质，在专业领域确立权威，适合申请高级职称或重要学术身份。</li>
+        <li><strong>2026 丙午年（杀刃交锋）：</strong>这是你将手头技术进行极高强度压测、并推向市场/职场前台的核爆之年。</li>
       </ul>
     </div>
   </div>
@@ -703,10 +675,10 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
   <div class="warn-box">
     <h3>⚠️ 忌神破局：土多掩金，水冷灭火</h3>
     <div class="quote" style="border-left-color:var(--earth);background:rgba(184,163,133,0.05)">《子平真诠》：「金生冬月，最忌湿土晦火生寒。」</div>
-    <p style="font-size:0.9rem;line-height:2;color:rgba(224,228,232,0.85);margin-bottom:16px;font-weight:300">原局最大的威胁是"土"。特别是走<strong>湿土（辰、丑）与金（比劫）</strong>的年份（如戊申、己酉、辛丑年）。</p>
+    <p style="font-size:0.9rem;line-height:2;color:rgba(224,228,232,0.85);margin-bottom:16px;font-weight:300">原局最大的威胁是"土"。特别是走<strong>湿土（辰、丑）与重金（比劫）</strong>的年份（如戊申、己酉、辛丑年）。</p>
     <ul class="strat-list">
       <li><strong>引发后果：</strong>土一旦过旺，就会把你赖以生存的丙火（暖局之火、事业权威）给扑灭，同时把你的伤官才华给堵死。表现为：思路陷入严重枯竭，项目推不动，或者因为过分固执己见（土的负面）而导致团队或资金链陷入泥潭。</li>
-      <li><strong>防御策略：</strong>遇到重土的流年，坚决不要盲目扩张，不要接手那些重资产、需要庞大实体库存的项目。应当将所有的资产轻量化，退守到依靠纯数字产品（软件、IP）或跨国信息差赚钱的轻便阵地。</li>
+      <li><strong>防御策略：</strong>遇到重土的流年，坚决不要盲目扩张，不要接手那些重资产、需要庞大实体库存的项目。应当将所有的资产轻量化，退守到依靠纯核心技术或专业信息差赚钱的轻便阵地。</li>
     </ul>
   </div>
 
@@ -715,7 +687,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <p style="margin-bottom:12px">原局地支带有隐患，当流年触发时，极易引发人生剧烈动荡：</p>
     <div style="background:rgba(10,13,20,0.4);border:1px solid rgba(184,163,133,0.2);padding:16px;border-radius:6px;margin-bottom:12px">
       <strong style="color:var(--earth);font-size:0.95rem;display:block;margin-bottom:8px">1. 辰戌相冲（日年相冲，根基动荡）</strong>
-      <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);margin-bottom:8px;line-height:1.8">年支戌土与日支辰土相冲。冲破了印库，这暗示你早年必定会离开故土去外地发展，且内心深处的归属感容易发生动荡。<br><strong>⚠️ 近期高危流年：2030 庚戌年。</strong>戌土填实引动辰戌冲。这一年在居住地、公司基础架构或底层资金链上极易发生剧烈洗牌。需提前做好备份。</p>
+      <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);margin-bottom:8px;line-height:1.8">年支戌土与日支辰土相冲。冲破了印库，这暗示你早年必定会离开故土去外地求学发展，且内心深处的归属感容易发生动荡。<br><strong>⚠️ 近期高危流年：2030 庚戌年。</strong>戌土填实引动辰戌冲。这一年在居住地、核心资产结构或底层资金链上极易发生剧烈洗牌。需提前做好备份。</p>
     </div>
     <div style="background:rgba(10,13,20,0.4);border:1px solid rgba(176,184,200,0.2);padding:16px;border-radius:6px;margin-bottom:12px">
       <strong style="color:var(--metal);font-size:0.95rem;display:block;margin-bottom:8px">2. 子酉相破（月时相破，内部损耗）</strong>
@@ -723,7 +695,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     </div>
     <div style="background:rgba(10,13,20,0.4);border:1px solid rgba(92,130,166,0.2);padding:16px;border-radius:6px">
       <strong style="color:var(--water);font-size:0.95rem;display:block;margin-bottom:8px">3. 水旺灭火（子月本气，寒局加重）</strong>
-      <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);line-height:1.8">当流年带亥水、壬癸天透时（如壬子、癸亥年），水气极盛，会严重扑灭调候用神丙火。这种年份往往伴随着精神内耗加重、事业扩张受阻与健康隐患（心血管/妇科）。<br><strong>⚠️ 近期高危流年：2032 壬子年。</strong>子月本气伤官合年流年壬水，寒气达到顶峰，需提前布好木火护盾（往南方、东方向移动或布局）。</p>
+      <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);line-height:1.8">当流年带亥水、壬癸天透时（如壬子、癸亥年），水气极盛，会严重扑灭调候用神丙火。这种年份往往伴随着精神内耗加重、事业扩张受阻与健康隐患（心血管/妇科）。<br><strong>⚠️ 近期高危流年：2032 壬子年。</strong>子月本气伤官逢流年壬水，寒气达到顶峰，需提前布好木火护盾（往南方、东方向移动或布局）。</p>
     </div>
   </div>
 </section>
@@ -743,25 +715,26 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <div class="wealth-tier-body">
       <p>财富底色的核心优势：<strong>"伤官生财"</strong>与<strong>"财杀相生"</strong>。</p>
       <div class="quote">《滴天髓》：「财气通门户，无人不富。」</div>
-      <p>天干甲木（偏财）代表宏大的流量、跨界的资源（如国际大盘、跨国贸易或宏观互联网平台）；乙木（正财）合身（乙庚合），代表你能极其精准地抓取现金流，每一笔利润都算得极其清楚，绝不虚高。同时，财生七杀（丙火），这意味着你赚取的财富，会迅速转化为你的社会地位、品牌影响力和话语权。你的财富积累，本质上是靠"降维打击"的信息差和硬核技术（伤官子水）来实现的。</p>
-      <p><strong>终极解法：</strong>无限放大你的"木火"属性。跨界商贸或数字出海（资源属木，网络属火）完美契合！系统开发与底层架构构建也是神来之笔！在这两条赛道上深耕，你已经拿到了命运剧本的最佳通关秘籍。</p>
+      <p>天干甲木（偏财）代表宏大的格局、跨界的资源（如顶级的技术名声或更广阔的客源大盘）；乙木（正财）合身（乙庚合），代表你能极其精准地抓取现金流，每一笔利润都算得极其清楚，绝不虚高。同时，财生七杀（丙火），这意味着你赚取的财富，会迅速转化为你的社会地位、品牌影响力和话语权。你的财富积累，本质上是靠"降维打击"的专业壁垒（伤官子水+羊刃手术刀）来实现的。</p>
+      <p><strong>稳扎稳打还是高风险投资？</strong><br>你属于“技术生财”（伤官生财），且乙庚合正财，意味着你的财富必须建立在<strong>极其过硬的专业壁垒（医疗技术/核心手艺）</strong>之上。<strong>坚决避开脱离专业的盲目高风险投资（如炒币、重资产投机）</strong>，因为原局有劫财（酉），一旦涉足高杠杆必被掠夺。</p>
+      <p><strong>关于合伙与避坑：</strong><br>如果要合伙，你必须掌握绝对的技术核心或财务控制权。<strong>极度忌讳与“画大饼、无实操能力”的人，以及八字中土金过旺（固执、拖泥带水）的人合伙</strong>。最佳合伙模式是“你出核心技术，对方出流量或运营平台”。</p>
     </div>
   </div>
 
   <div class="wealth-levels">
     <div class="wl-item">
       <div class="wl-phase">年干 · 偏财（甲木）</div>
-      <div class="wl-val" style="color:var(--wood)">跨界大盘的宏观杠杆</div>
-      <div class="wl-desc">高高透在年干，这是你的大格局。代表你能整合非本土的资源，抓取大趋势下的流量红利。这部分钱带有一定的风险和操作难度，但上限极高。适合用来布局大平台或长线资产。</div>
+      <div class="wl-val" style="color:var(--wood)">专业大盘的宏观杠杆</div>
+      <div class="wl-desc">高高透在年干，这是你的大格局。代表你能整合非本土的资源，抓取大趋势下的红利。这部分钱带有一定的挑战性，但上限极高，如学术名声带来的顶级红利。</div>
     </div>
     <div class="wl-item">
       <div class="wl-phase">时干 · 正财（乙木）</div>
       <div class="wl-val" style="color:var(--metal)">乙庚相合的落袋为安</div>
-      <div class="wl-desc">正财与日主紧紧相合。代表在宏观布局之外，你有极强的落地执行力和精细化运营能力。这确保了你的大盘不会成为空中楼阁，每一分利润都能落进自己的口袋。</div>
+      <div class="wl-desc">正财与日主紧紧相合。代表在宏观布局之外，你有极强的落地执行力和精细化变现能力。这确保了你的大盘不会成为空中楼阁，每一分利润都能落进自己的口袋。</div>
     </div>
   </div>
 
-    <div class="card-ti" style="margin-top:32px;margin-bottom:8px;color:var(--pb)"><span style="font-size:0.38rem;color:var(--pb);margin-right:9px">◆</span>财富三阶段成长路径</div>
+  <div class="card-ti" style="margin-top:32px;margin-bottom:8px;color:var(--pb)"><span style="font-size:0.38rem;color:var(--pb);margin-right:9px">◆</span>财富三阶段成长路径</div>
   <p style="font-size:0.88rem;color:rgba(224,228,232,0.6);font-family:'Noto Sans SC',sans-serif;margin-bottom:16px;font-weight:300">从技术积累到产业版图，每一阶段的底层逻辑各不相同：</p>
   <div class="wealth-stages">
     <div class="ws-item s1">
@@ -772,12 +745,12 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <div class="ws-item s2">
       <div class="ws-stage">第二阶段 · 壬申大运（2029-2038）</div>
       <div class="ws-name">资产规模化变现</div>
-      <div class="ws-desc">食神生财，水金并旺，商业模式趋于系统化。虽仍是忌神当道（水金旺），但已积累了极强的抗风险能力与自动化体系。这一阶段财富将开始成规模变现，但仍需防范水旺灭火带来的决策失误。</div>
+      <div class="ws-desc">食神生财，水金并旺，商业模式趋于系统化。虽仍是忌神当道（水金旺），但已积累了极强的抗风险能力与专业体系。这一阶段财富将开始成规模变现，但仍需防范水旺灭火带来的决策失误。</div>
     </div>
     <div class="ws-item s3">
       <div class="ws-stage">第三阶段 · 辛未/庚午大运（2039-2058）</div>
       <div class="ws-name">跨界帝国升维封顶</div>
-      <div class="ws-desc">亥卯未暗合木局，木气通关化解水火，资产实现绝对升维。随后午火运大红利期到来，七杀与杀刃相配得地，跨界版图彻底成型。这是你一生中最鼎盛的财富爆发期，堪称命中注定的封顶时刻。</div>
+      <div class="ws-desc">亥卯未暗合木局，木气通关化解水火，资产实现绝对升维。随后午火运大红利期到来，七杀与杀刃相配得地，权威与财富版图彻底成型。这是你一生中最鼎盛的财富爆发期，堪称命中注定的封顶时刻。</div>
     </div>
   </div>
 </section>
@@ -786,29 +759,30 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
   <div class="sec-hd">
     <div class="sec-num">柒</div>
     <div class="sec-ti-wrap">
-      <div class="sec-ti">事业板块：魁罡破阵，降维打击的黄金赛道</div>
+      <div class="sec-ti">事业板块：庚金带刃，极致的锋芒与精密</div>
       <div class="sec-en">CAREER STRATEGY & AUTHORITY MONETIZATION</div>
-      <div class="sec-intro">庚辰魁罡，逢阳刃与七杀，这绝不是一个在格子间里唯唯诺诺的打工人。你天生就是来制定游戏规则的。</div>
+      <div class="sec-intro">庚辰魁罡，逢阳刃与七杀，这绝不是一个在格子间里唯唯诺诺的打工人。你天生就是来执掌“生杀之权”的。</div>
     </div>
   </div>
 
   <div class="oppo-box">
-    <h3 style="color:var(--pb)">⚔️ 命局先天核心天赋：破局与重构</h3>
+    <h3 style="color:var(--pb)">⚔️ 命局先天核心天赋：重金属与手术刀</h3>
     <div class="quote" style="margin-top:0">《滴天髓》：「庚金带煞，刚健为最。得水而清，得火而锐。」</div>
     <p style="margin-top:14px;font-size:0.86rem;line-height:2.1;color:rgba(224,228,232,0.8);font-weight:300">
-      庚金劈甲，子水伤官，丙火七杀。你的天赋在于<strong>"破局"与"重构"</strong>。你能极其敏锐地洞察系统的底层漏洞（伤官配印），并用极强的铁血手腕（七杀、魁罡、羊刃）进行纠偏和管理。你极度适合做"从0到1"的开创者，或者在"乱局中拨乱反正"的将才。只要核心技术与规则掌控在你手中，你就是赛道的执牛耳者。
+      庚金为坚硬的重金属，配合时支酉金（羊刃），在物理意象上就是一把<strong>极度精密、锋利的手术刀</strong>。加上伤官（子水）带来的精细逻辑与洞察力，你天生就是吃“技术饭”和“手艺饭”的顶级专家。这种极具杀伐决断力的组合，极其适合<strong>医疗、尤其是需要动刀或操作精密器械的专科医生（如牙体牙髓专科）</strong>。
     </p>
   </div>
 
   <div class="card" style="border-color:rgba(217,92,67,0.3)">
-    <div class="card-ti" style="color:var(--fire)">🔥 喜用神精准导向的黄金行业</div>
+    <div class="card-ti" style="color:var(--fire)">🔥 事业路线抉择：独立与挂靠的完美平衡</div>
     <div class="quote" style="margin-top:0;border-left-color:var(--fire);background:rgba(217,92,67,0.05)">《三命通会》：「金寒水冷，非木火不能生发。」</div>
-    <p style="font-size:0.9rem;font-weight:500;color:var(--fire);margin-top:16px">1. 火属性行业（调候第一用神，主事业权威）</p>
-    <p style="margin-bottom:12px">代表领域：能源、光电、互联网、数字媒体、人工智能、高精尖科技、影视传媒等。火代表光明与传播，适合在聚光灯下或网络虚拟空间中建立个人权威。通过互联网的杠杆将你的技术力无限放大，是破局的核心手段。</p>
-    <p style="font-size:0.9rem;font-weight:500;color:var(--wood);margin-top:16px">2. 木属性行业（治病用神，主财源财富）</p>
-    <p style="margin-bottom:12px">代表领域：农林生态、服装纺织、教育培训、文化出版、医疗康养、以及所有涉及跨地域的商贸流通业。木主生发与流通，尤其是跨越地域界限的商贸流转（结合原局偏财大盘），能将你子水伤官的智慧完美转换为庞大的财富矩阵。</p>
-    <p style="font-size:0.9rem;font-weight:500;color:var(--pb);margin-top:16px">3. 黄金赛道组合推荐（木火协同，降维双杀）</p>
-    <p>最顶配的变现路径是"木火叠加型赛道"：<strong>跨境数字内容出海</strong>（东南亚/海外网络平台）、<strong>SaaS工具出海+技术顾问</strong>、<strong>AI驱动的教育或医疗工具</strong>。你的伤官给技术深度，偏财给商业嗅觉，七杀给执行力，三者叠加，在这类赛道上的竞争力无出其右。</p>
+    <p style="font-size:0.9rem;font-weight:500;color:var(--fire);margin-top:16px">针对您回槟城后的事业定位：</p>
+    <p style="margin-bottom:12px"><strong>1. 为什么必须保留“独立事业身份”？</strong><br>你是魁罡遇羊刃，天生带有傲骨（伤官见杀），绝不适合在传统体制内被过度管束，也极其抗拒完全依附于他人的平台（包括伴侣的诊所）。你必须拥有能够彰显自己学术权威与独立品牌（印星与七杀）的阵地。</p>
+
+    <p style="margin-bottom:12px"><strong>2. 大学教职 vs 诊所专科医生？双轨并行是王道！</strong><br>大学教师/教学研究属“木火”（木主培育，火主传播与名声），这是你最缺、最需要的“调候用神”。它能极大提升你的社会地位与声望。但在大学里只做教职，往往现金流（财星）不够丰厚；而在私人诊所做主力专科医生，能直接实现“羊刃切割（手术操作）”带来的高溢价现金流（正财）。</p>
+
+    <p style="font-size:0.9rem;font-weight:500;color:var(--pb);margin-top:16px">🏆 终极建议方案</p>
+    <p>最佳策略是：<strong>在外面（如大学申请教职/研究员，或在外部大平台）保持独立的专家学者身份（赚取木火的“名”），同时在你老公的诊所中以“独立合伙人”身份挂单，作为特聘主力专科医生，只接转诊（赚取金水的“利”）</strong>。这种“若即若离”的合作模式，既能借势，名利双收，又能完美避开魁罡女命在职场中被束缚的内耗感。</p>
   </div>
 </section>
 
@@ -816,31 +790,24 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
   <div class="sec-hd">
     <div class="sec-num">捌</div>
     <div class="sec-ti-wrap">
-      <div class="sec-ti">情缘与婚姻：势均力敌的慕强与高维吸引</div>
-      <div class="sec-en">ROMANCE · MARRIAGE · EMOTIONAL PROJECTION</div>
-      <div class="sec-intro">庚辰魁罡女命，且七杀透出。在感情中，你绝不需要依附者，更看不起弱者。你渴望的是势均力敌的战友。</div>
+      <div class="sec-ti">婚姻与合伙：势均力敌的慕强与防备</div>
+      <div class="sec-en">ROMANCE · MARRIAGE · PARTNERSHIP</div>
+      <div class="sec-intro">庚辰魁罡女命，且七杀透出。在感情与事业合伙中，你绝不需要依附者，更看不起弱者。你渴望的是势均力敌的战友。</div>
     </div>
   </div>
 
   <div class="romance-diagram">
     <div class="romance-box">
       <div class="romance-box-ti">夫妻宫解析：辰土偏印的灵魂筛选</div>
-      <p>日坐辰土（偏印），且为魁罡。在亲密关系中，你极度看重精神契合度与对方的"非标智慧"。因为辰土生庚金，你潜意识里希望伴侣能像偏印一样，给予你深度的精神滋养或技术/事业上的启发。婚后往往是一种"合伙人式"的状态，精神博弈与共同进化并存，而非依附型的传统关系。</p>
+      <p>日坐辰土（偏印），且为魁罡。在亲密关系中，你极度看重精神契合度与对方的"非标智慧"。因为辰土生庚金，你潜意识里希望伴侣能像偏印一样，给予你深度的精神滋养或事业上的启发。婚后往往是一种"合伙人式"的状态，精神博弈与共同进化并存，而非依附型的传统关系。</p>
       <p style="margin-top:8px;font-size:0.82rem;color:rgba(224,228,232,0.6)">⚠️ 魁罡女命特殊规律：夫妻宫辰土，无论逢冲（戌年）还是逢合（酉年引动辰酉合），都会引发感情结构的变动，需特别留意关键年份的婚恋动向。</p>
     </div>
     <div class="romance-box" style="border-color:rgba(176,184,200,0.4);background:rgba(176,184,200,0.06)">
-      <div class="romance-box-ti" style="color:var(--pb)">正缘配偶精准画像</div>
-      <p><strong>✅ 必须是【木火】极其旺盛之人。</strong><br>
-      1. <strong>有魄力与执行力（火/七杀）：</strong>能在事业上为你指点迷津，气场足够强大，能欣赏并承接你的锋芒。<br>
-      2. <strong>情绪包容（木）：</strong>能理解你高压下的焦虑，提供温和的情绪价值。<br>
-      3. <strong>外貌特质：</strong>往往轮廓分明（火的明朗），眼神有穿透力，气质干练有型。</p>
-      <div class="match-tags">
-        <span class="match-tag fire">午年/午月生人（正官火旺）</span>
-        <span class="match-tag fire">寅年生人（木火并旺）</span>
-        <span class="match-tag wood">卯年生人（木气旺盛）</span>
-        <span class="match-tag fire">属马属虎者最宜（午、寅）</span>
-        <span class="match-tag wood">天干带甲丙丁者佳</span>
-      </div>
+      <div class="romance-box-ti" style="color:var(--pb)">与伴侣合伙的绝对禁忌与解法</div>
+      <p><strong>与老公共同经营诊所？极度需要边界感！</strong><br>
+      你们可以共同经营，但<strong>绝对不适合在一起进行日常的微观管理</strong>。你的日柱魁罡加羊刃，一旦在同一屋檐下事无巨细地共事，必定引发水火交战（伤官见杀），将职场矛盾带入家庭。</p>
+      <p><strong>最完美的角色分工：</strong><br>
+      他主外（负责诊所的日常运营、管理团队与基础客源引流），你主内（作为特聘主力专科医生，独立排班，只接高难度的专科转诊）。<strong>财务上明算账，业务上互不干涉，保留绝对的空间距离</strong>，这是保持婚姻甜蜜与事业双赢的唯一解法。</p>
     </div>
   </div>
 
@@ -882,10 +849,6 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     </div>
   </div>
 
-  <div class="card" style="border-color:rgba(176,184,200,0.3)">
-    <div class="card-ti">虚拟投射：硬核叙事的精神避风港</div>
-    <p>对于魁罡和带有伤官的你来说，现实伴侣往往难以100%达到完美。因此，你极易将过剩的精神能量投射到带有宏大叙事、暗黑童话或极深逻辑体系的虚拟世界中。这其实是你在用虚拟的"木火（想象与叙事）"去平衡现实中紧绷的"金水（代码与数据）"，是极好的心灵减压方式。</p>
-  </div>
 </section>
 
 <section class="section">
@@ -906,17 +869,17 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <div class="ss-item">
       <div class="ss-name" style="color:var(--metal)">羊刃（酉）· 精密的手术刀</div>
       <div class="ss-rule">成因：「庚日见酉为羊刃」。时支落酉金。</div>
-      <div class="ss-desc">羊刃落在时柱（代表事业后端、技术执行）。这意味着你在处理业务细节时（比如产品的极致打磨、系统的精准调试）具有极度精准和不容妥协的控制欲。羊刃与七杀（丙）同柱透出，在命理中称为"杀刃格"，是极强的事业动力。</div>
+      <div class="ss-desc">羊刃落在时柱（代表事业后端、技术执行）。这意味着你在处理业务细节时（比如医用器械的极致打磨、手术的精准操作）具有极度精准和不容妥协的控制欲。羊刃与七杀（丙）同透，在命理中称为"杀刃格"，是极强的事业动力。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--wood)">华盖（辰）· 玄学与孤独的巅峰</div>
       <div class="ss-rule">成因：「申子辰见辰为华盖」。月支子水，日支辰土同构。</div>
-      <div class="ss-desc">华盖星入命，尤其是落在偏印之上。这绝对是你能在术数玄学（八字、奇门）或极深学术领域达到极高造诣的通行证。你天生带有一种世人难以理解的超脱感与孤独天才气质。华盖偏印叠加，是"独立学者型"创始人的极高标配。</div>
+      <div class="ss-desc">华盖星入命，尤其是落在偏印之上。这绝对是你能在术数玄学（八字、奇门）或极深学术/医学领域达到极高造诣的通行证。你天生带有一种世人难以理解的超脱感与孤独天才气质。华盖偏印叠加，是"独立学者型"专家的极高标配。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--fire)">国印贵人（戌）· 掌印之尊</div>
       <div class="ss-rule">成因：「甲逢戌为国印」。年干甲见年支戌。</div>
-      <div class="ss-desc">四柱带国印，主掌印信，有威权。代表你办事公道、照章行事，天生具备很强的管理能力和制度建设能力，极其利于作为企业高管或创业做一把手掌权。国印贵人也代表你在官方机构或权威组织中较容易获得背书。</div>
+      <div class="ss-desc">四柱带国印，主掌印信，有威权。代表你办事公道、照章行事，天生具备很强的管理能力和制度建设能力，极其利于作为医疗机构高管或申请教职/研究员身份。国印贵人也代表你在官方机构或权威组织中较容易获得背书。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--wood)">金舆禄（戌）· 财帛富贵</div>
@@ -931,12 +894,12 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <div class="ss-item">
       <div class="ss-name" style="color:var(--fire)">流霞煞（辰）· 烈血与锋芒</div>
       <div class="ss-rule">成因：「庚逢辰为流霞」。日柱庚辰。</div>
-      <div class="ss-desc">流霞入命，主性情刚烈，行事带有血性。在商业竞争中敢于下狠手，雷厉风行。对于女命而言，结合羊刃，需在妇科健康与生育议题上特别谨慎，建议提前进行专业体检，可以"主动应象"（如适当献血）来化解血光之兆。</div>
+      <div class="ss-desc">流霞入命，主性情刚烈，行事带有血性。在商业竞争中敢于下狠手，雷厉风行。对于女命而言，结合羊刃，需在妇科健康与生育议题上特别谨慎，建议提前进行专业体检，可以"主动应象"（如适当献血、微创医美等）来化解血光之兆。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--water)">童子煞（子）· 第六感的觉醒</div>
       <div class="ss-rule">成因：「冬生见子为童子」。冬季生逢月令子水。</div>
-      <div class="ss-desc">童子煞赋予了你极高的灵觉与敏锐的第六感，对传统文化、玄学有着天生的亲近感。但也暗示早年可能体质较弱，或经历过一些难以用科学解释的特殊体验。结合华盖，你对玄学的感应力远超常人。</div>
+      <div class="ss-desc">童子煞赋予了你极高的灵觉与敏锐的第六感，对传统文化、玄学有着天生的亲近感。但也暗示早年可能体质较弱，或经历过一些难以用科学解释的特殊体验。结合华盖，你对玄学/心理学的感应力远超常人。</div>
     </div>
     <div class="ss-item">
       <div class="ss-name" style="color:var(--water)">将星（子）· 调度全局</div>
@@ -946,7 +909,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <div class="ss-item">
       <div class="ss-name" style="color:var(--earth)">病符（酉）· 隐伏的微恙</div>
       <div class="ss-rule">成因：「戌年见酉为病符」。原局年支戌，见时支酉金。</div>
-      <div class="ss-desc">病符星精准无误地落在了时支"酉"金之上。时柱代表晚年、下属与隐秘的内在。这意味着在极高强度的拼杀（羊刃）过后，晚年或事业大后方容易潜伏亚健康或慢性耗损。结合流霞煞，需提前建立健康防御机制，定期体检尤为关键。</div>
+      <div class="ss-desc">戌逢酉为病符，正落在时柱（晚年与隐秘内在）。这意味着在极高强度的拼杀（羊刃）过后，晚年或事业大后方容易潜伏亚健康或慢性耗损。结合流霞煞，需提前建立健康防御机制，定期体检尤为关键。</div>
     </div>
   </div>
 </section>
@@ -1041,12 +1004,12 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
       <div class="yun-age">第一运 · 幼年期（5-14岁 · 1999-2008）</div>
       <div class="yun-stem"><span class="c-wood">乙</span><span class="c-water">亥</span></div>
       <div class="yun-desc">乙木正财（喜神）与亥水（忌神）交加。乙木带来早年家庭经济尚可的底色，但亥水加重寒局，童年承受一定的精神压力或成长环境的变迁。喜忌并存，是蓄力的沉淀期。</div>
-      <span class="yun-quality q-warn" style="border-color:var(--water);color:var(--water);background:rgba(92,130,166,0.1)">喜忌交加</span>
+      <span class="yun-quality q-warn" style="border-color:var(--water);color:var(--water);background:rgba(92,130,166,0.1)">早年寒潜</span>
     </div>
     <div class="yun-card" style="border-color:var(--earth);background:rgba(184,163,133,0.06)">
       <div class="yun-age">第二运 · 启蒙期（15-24岁 · 2009-2018）</div>
       <div class="yun-stem"><span class="c-wood">甲</span><span class="c-earth">戌</span></div>
-      <div class="yun-desc">偏财（甲木）通透，宏大视野启蒙，商业嗅觉初觉醒。但戌土（忌神印星）地藏，辰戌相冲根基微动。这一时期多有求学轨迹与居住地的远距离变迁。用神甲木让你看到了财富的可能性。</div>
+      <div class="yun-desc">偏财（甲木）通透，宏大视野启蒙，商业嗅觉初觉醒。但戌土（忌神印星）地藏，辰戌相冲根基微动。这一时期多有求学轨迹与居住地的远距离变迁。用神甲木让你看到了未来的可能性。</div>
       <span class="yun-quality q-warn" style="border-color:var(--earth);color:var(--earth);background:rgba(184,163,133,0.1)">动荡中初醒</span>
     </div>
     <div class="yun-card current" style="border-color:var(--metal);background:rgba(194,200,209,0.08);box-shadow:inset 0 0 32px rgba(194,200,209,0.15)">
@@ -1058,7 +1021,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     <div class="yun-card" style="border-color:var(--metal);background:rgba(194,200,209,0.06)">
       <div class="yun-age">第四运 · 质变期（35-44岁 · 2029-2038）</div>
       <div class="yun-stem"><span class="c-water">壬</span><span class="c-metal">申</span></div>
-      <div class="yun-desc">壬水食神（泄日主），申金比肩（金水旺）。仍属水金忌神主导期，但你已积累了极强的抗风险能力。商业模式趋于系统化与自动化，财富开始成规模变现。以守促攻，稳固护城河。</div>
+      <div class="yun-desc">壬水食神（泄日主），申金比肩（金水旺）。仍属水金忌神主导期，但你已积累了极强的抗风险能力。业务模式趋于系统化与自动化，财富开始成规模变现。以守促攻，稳固护城河。</div>
       <span class="yun-quality q-good" style="border-color:var(--metal);color:var(--metal);background:rgba(194,200,209,0.1)">势能量变期</span>
     </div>
     <div class="yun-card" style="border-color:var(--wood);background:rgba(136,176,139,0.08)">
@@ -1091,7 +1054,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
         <div class="ly-year">乙巳年</div>
         <div class="ly-gz">2025 · 乙木正财 · 巳火七杀</div>
         <div class="ly-dots"><div class="ly-dot on"></div><div class="ly-dot on"></div><div class="ly-dot fire"></div><div class="ly-dot fire"></div><div class="ly-dot"></div></div>
-        <div class="ly-desc">木火相生，状态显著回暖，业务推进极其顺畅。极度利于通过你的技术或运营手腕获得资源倾斜，确立行业地位。乙木正财合日主，现金流大幅改善。</div>
+        <div class="ly-desc">木火相生，状态显著回暖，业务推进极其顺畅。极度利于通过你的技术手腕获得资源倾斜，确立行业地位。乙木正财合日主，现金流大幅改善。</div>
       </div>
       <div class="ly-card ly-now">
         <div class="ly-year">丙午年</div>
@@ -1131,18 +1094,23 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
   <div class="sec-hd">
     <div class="sec-num">拾贰</div>
     <div class="sec-ti-wrap">
-      <div class="sec-ti">健康养生与外貌魅力：冰冷钢刃的保养指南</div>
+      <div class="sec-ti">健康养生与情绪风控：寒渊钢刃的保养指南</div>
       <div class="sec-en">HEALTH & WELLNESS & AESTHETIC STYLE</div>
-      <div class="sec-intro">金水伤官之局，最怕寒气过重。维持"火"的燃烧，是你身心健康的第一法则。流霞煞与羊刃并存，需额外关注妇科与血液系统。</div>
+      <div class="sec-intro">金水伤官之局，最怕寒气过重。维持"火"的燃烧，是你身心健康与情绪稳定的第一法则。流霞煞与羊刃并存，必须掌握"主动应象"的玄学化解法。</div>
     </div>
   </div>
   
   <div class="card" style="border-color:rgba(176,184,200,0.3)">
-    <div class="card-ti" style="color:var(--fire)">内科健康：寒凝气滞的预警</div>
-    <p><strong>呼吸与肺系统（金生水泄）：</strong>庚金被寒水严重泄耗。每逢秋冬交替或重霾天气，极易引发鼻炎、咽喉或支气管的敏感。需注意工作环境的通风与温湿度控制，推荐长期使用空气净化器并保持室内温度不低于22℃。</p>
-    <p><strong>心血管系统（水灭火）：</strong>这是最大的雷区。七杀丙火被子水截脚。在长期高压工作或赶节点时，极容易出现心脏骤跳、供血不足或偏头痛。<strong>坚决禁止长期阴阳颠倒的作息</strong>，保证充分的有氧日照运动（补火），每周至少3次户外有氧活动。</p>
-    <p><strong>妇科与泌尿（水寒·流霞煞应象）：</strong>冬月寒水当令，带流霞煞（庚辰）。宫寒、内分泌失调或泌尿系统炎症是隐患，也需警惕生育期间的妇科问题（流霞应血光）。日常饮品应彻底戒除冰镇，推荐日常饮用：<strong>红枣桂圆姜茶（暖宫补火）</strong>或<strong>玫瑰红糖水（活血化瘀）</strong>，秋冬尤甚。</p>
-    <p><strong>脊椎与关节（金属伤）：</strong>羊刃与流霞煞双重叠加，对于长期伏案工作者，颈椎与腰椎的慢性劳损风险较高。建议每工作45分钟强制起身活动，配合适度拉伸，防止"寒气入骨"的慢性积损。</p>
+    <div class="card-ti" style="color:var(--fire)">内科健康与情绪内耗剖析</div>
+    <p><strong>情绪内耗与作息混乱的根源：</strong>你的犹豫和严重内耗源于“偏印（辰土）与伤官（子水）”的互相拉扯。伤官想要极速推进，偏印却在反复推演风险。当压力骤增时，你潜意识会用“进食（属土）”来强行压制焦虑（土克水），这就导致了脾胃负担过重，形成中焦瘀滞的<strong>苹果型身材</strong>。而长期在“子、亥时”（晚上9点至凌晨1点）熬夜，会疯狂加剧寒水之气，扑灭你的暖局之火（丙火），直接导致第二天情绪极度低落、爆发内耗。</p>
+    <p><strong>心血管系统（水灭火）：</strong>这是最大的雷区。七杀丙火被子水截脚。在长期高压工作或不规律作息时，极容易出现心脏骤跳、供血不足或偏头痛。<strong>坚决禁止长期阴阳颠倒的作息</strong>，保证充分的有氧日照运动（补火）。</p>
+  </div>
+
+  <div class="oppo-box" style="margin-top:24px; border-color:rgba(217,92,67,0.5)">
+    <h3 style="color:var(--fire); font-size:1.1rem; margin-bottom:16px;">💉 减肥与打针的命理学建议（强推）</h3>
+    <p style="font-size:0.9rem; line-height:2.2; color:rgba(224,228,232,0.85); margin-bottom:0; font-weight:300;">
+      苹果型身材的根源是水火交战导致的中焦滞留（土虚）。你想通过打针（如减重笔/医美微创）来破局，从命理学角度看，<strong>非常推荐！</strong> <br>因为你命中带有【羊刃（酉金）】与【流霞煞（辰）】，这本身就代表着金属利器与轻微血光。通过医疗手段（打针、微创手术）来达成减重目的，不仅能解决身材焦虑，更是完美的<strong>“主动应象”</strong>——用可控的小血光、小利器之伤，去化解命局中潜在的意外之灾。这属于最高级的玄学风控手段。
+    </p>
   </div>
 
   <div class="romance-timeline" style="margin-top:28px;margin-bottom:0">
@@ -1174,17 +1142,6 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
       </div>
     </div>
   </div>
-
-  <div class="oppo-box" style="margin-top:32px;border-color:rgba(176,184,200,0.5)">
-    <h3 style="color:var(--pb);font-size:1.1rem;margin-bottom:16px">💎 外貌魅力与专属风格密码</h3>
-    <p style="font-size:0.9rem;line-height:2.2;color:rgba(224,228,232,0.85);margin-bottom:16px;font-weight:300">庚金女命自带一种锋利、干练的大女主气质。结合金水伤官的清透与丙火七杀的高冷，你绝不适合软糯甜美的装扮，而是天生的"高知御姐"模板。</p>
-    <ul class="strat-list">
-      <li><strong>核心风格：Cyber-Tech / 高智先锋风 (Smart Chic)。</strong>极简利落的剪裁（如极简干练的西装、质感上乘的衬衫），搭配极具金属质感的冷色调，最能衬托你的气场。你穿中性风往往比复杂的裙装更有辨识度。</li>
-      <li><strong>穿搭色彩幸运密码：</strong>你的终极用神是"木火"。日常穿搭在保持黑白灰基调（水金）的同时，<strong>必须点缀亮眼的正红、焦糖色、或者墨绿色（火木）</strong>。比如一条红色的丝巾、墨绿的腕表，能瞬间激活命盘的"暖局"效应，提升财富与贵人气场。</li>
-      <li><strong>首饰材质命理密码：</strong>主打<strong>玫瑰金（火属金）</strong>或<strong>木质/竹制手串</strong>（木属），避免厚重的铂金纯银（金旺更重）。宝石方面，红宝石/石榴石（火红补火）和绿翡翠/橄榄石（木绿助财）是你的专属能量石，远比冷白水晶（金水旺）更适合你的命局。</li>
-      <li><strong>妆容风格：</strong>妆容强调极具英气的眉骨与干净透亮的底妆。唇色优先暖调（正红/砖红/豆沙）而非冷调（裸粉/冷玫红）——暖色唇补足面部的"火气"，提升整体贵气感。</li>
-    </ul>
-  </div>
 </section>
 
 <section class="section">
@@ -1197,58 +1154,59 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
     </div>
   </div>
 
-  <div class="map-module">
+  <div class="map-module" style="grid-template-columns:1fr;">
     <div class="map-text">
       <h3 style="color:var(--pb)">🌏 第一版块：马来西亚本土风水阵眼</h3>
-      <p>马来西亚地处赤道，先天属火。在本土发展，天然就能极大补足你命盘最需的"调候暖局"。细分到马来西亚各地区，五行方位差异如下：</p>
-      <div class="city-tags">
-        <div class="city-tag wood-tag anchor" data-text="<strong style='color:#E1F0E1'>🟢 东方/南部 (木火交加) · 势能爆发区</strong><br><br>柔佛新山、半岛东海岸（吉打/哥打巴鲁方向）、纳闽联邦直辖区。<br><br>木火最旺，能完美化解金水寒局！是你构建核心壁垒与强力变现的最佳阵地。尤其是柔佛依斯干达特区，数字经济与跨境贸易高度活跃，与你的财杀双透完美匹配。">
+      <p>马来西亚地处赤道，先天属火。在本土发展，天然就能极大补足你命盘最需的"调候暖局"。回到槟城后，五行方位差异如下：</p>
+      <div class="city-tags" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;">
+        <div class="city-tag wood-tag anchor" data-text="<strong style='color:#E1F0E1'>🟢 东方/南部 (木火交加) · 势能爆发区</strong><br><br>如柔佛新山、或半岛东海岸地区。<br><br>木火最旺，能完美化解金水寒局！是你构建核心医疗壁垒与强力变现的最佳阵地。">
           🟢 柔佛/东海岸 (木火) — 财富爆发最佳主场
         </div>
-        <div class="city-tag fire-tag anchor" data-text="<strong style='color:#F0E1E1'>🔴 南方 (火地) · 吉隆坡/雪兰莪</strong><br><br>大吉隆坡都市圈、士布爹、八打灵再也。<br><br>马来西亚经济心脏，属火旺之地。极度适合在此构建你的核心商业基地。配合你的七杀，在KL这类竞争激烈的主战场上，你的执行力能得到最大程度的释放。">
+        <div class="city-tag fire-tag anchor" data-text="<strong style='color:#F0E1E1'>🔴 南方 (火地) · 吉隆坡/雪兰莪</strong><br><br>大吉隆坡都市圈、士布爹、八打灵再也。<br><br>马来西亚经济心脏，属火旺之地。极度适合在此构建你的核心商业/医疗大基地。配合你的七杀，在KL这类竞争激烈的主战场上，你的执行力能得到最大程度的释放。">
           🔴 大吉隆坡 (火地) — 商业基地与品牌权威
         </div>
-        <div class="city-tag metal-tag anchor" data-text="<strong style='color:#E0E4E8'>⚪ 西北部 (金水偏旺) · 槟城</strong><br><br>槟城（你的出生地）地处半岛西北，靠近大海，金水之气偏旺。<br><br>在此发展能激发你的伤官技术才华，但内部竞争压力与精神内耗偏大。建议以槟城为'研发基地+根据地'，而非最终的变现收割场。出击要往南、往东。">
-          ⚪ 槟城 (金水) — 技术研发根据地，防内耗
+        <div class="city-tag metal-tag anchor" data-text="<strong style='color:#E0E4E8'>⚪ 西北部 (金水偏旺) · 槟城</strong><br><br>槟城（你的家乡）地处半岛西北，靠近大海，金水之气偏旺。<br><br>如果回槟城执业，能发挥你的伤官技术才华，但同业竞争压力与内部精神内耗会偏大。在此地必须坚持“独立特聘专家”身份（借印星化解），切忌陷入庸俗的内部人事斗争。">
+          ⚪ 槟城 (金水) — 适合独立执业，防内耗
         </div>
       </div>
     </div>
   </div>
 
-  <div class="map-module">
+  <div class="map-module" style="grid-template-columns:1fr;">
     <div class="map-text">
       <h3 style="color:var(--pb)">🌏 第二版块：东亚核心大区布局</h3>
-      <p>若将业务触角或实体发展延伸至东亚大区，地气的影响将变得极其鲜明。</p>
-      <div class="city-tags">
-        <div class="city-tag wood-tag anchor" data-text="<strong style='color:#E1F0E1'>🟢 东方 (木地) · 核心救生圈</strong><br><br>中国华东（长三角/杭州/苏州）、台湾（新竹科学园区/台北）、日韩（首尔/东京）。<br><br>东方属木，木生火。选择向东发展，是你命运直觉能够做出的绝对正确的选择。这里是你构建极客帝国与系统护城河的最强主场。台湾的电子代工产业链与你的金水伤官技术才华极度匹配。">
-          🟢 华东/台湾/日韩 (木地) — 技术主场与绝对护城河
+      <p>若将学术交流或业务触角延伸至东亚大区，地气的影响将变得极其鲜明。</p>
+      <div class="city-tags" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;">
+        <div class="city-tag wood-tag anchor" data-text="<strong style='color:#E1F0E1'>🟢 东方 (木地) · 核心救生圈</strong><br><br>中国华东（长三角/上海）、台湾、日韩。<br><br>东方属木，木生火。选择向东发展，是你命运直觉能够做出的绝对正确的选择。这里是你构建专业帝国与系统护城河的最强主场。">
+          🟢 华东/台湾/日韩 (木地) — 学术与技术绝对护城河
         </div>
-        <div class="city-tag fire-tag anchor" data-text="<strong style='color:#F0E1E1'>🔴 南方 (火地) · 权威确立区</strong><br><br>中国华南（深圳/广州/大湾区）、海南自贸港。<br><br>南方属火，直接补充七杀丙火。如果开拓实体供应链（跨境电商配套）或需要极强的商业执行力，华南是你不可或缺的前线阵地。深圳的跨境出口产业链与你偏财的大盘格局高度契合。">
-          🔴 大湾区/深圳 (火地) — 供应链与落地执行阵地
+        <div class="city-tag fire-tag anchor" data-text="<strong style='color:#F0E1E1'>🔴 南方 (火地) · 权威确立区</strong><br><br>中国华南（深圳/广州/大湾区）、海南自贸港。<br><br>南方属火，直接补充七杀丙火。大湾区的高速运转与你偏财的大盘格局高度契合。">
+          🔴 大湾区/华南 (火地) — 落地执行与高溢价阵地
         </div>
-        <div class="city-tag metal-tag anchor" style="background:rgba(184,163,133,0.15);border:1px solid rgba(184,163,133,0.4);color:#E8D8C8" data-text="<strong style='color:#E8D8C8'>⚪ 中部/北方 (忌地) · 高压深渊</strong><br><br>中国华北（北京/天津）、大西北。<br><br>土水旺地，会极大加剧你的生存压力，"土多金埋"会导致思路闭塞。北方的官僚体制与你的伤官傲骨极不兼容。非必要请将核心业务重心迁离此带，即使有业务合作也应以线上为主。">
+        <div class="city-tag metal-tag anchor" style="background:rgba(184,163,133,0.15);border:1px solid rgba(184,163,133,0.4);color:#E8D8C8" data-text="<strong style='color:#E8D8C8'>⚪ 中部/北方 (忌地) · 高压深渊</strong><br><br>中国华北（北京/天津）、大西北。<br><br>土水旺地，会极大加剧你的生存压力，'土多金埋'会导致思路闭塞。非必要请避免将核心业务重心迁离此带。">
           ⚪ 华北/西北 (土水忌地) — 压抑内耗，需远离
         </div>
       </div>
     </div>
   </div>
 
-  <div class="map-module">
+  <div class="map-module" style="grid-template-columns:1fr;">
     <div class="map-text">
-      <h3 style="color:var(--pb)">✈️ 第三版块：全球大盘与数字服务器高维锚点</h3>
-      <p style="margin-bottom:16px">注意：若为跨国界从业者，你的服务器节点（VPS部署）和流量主攻市场的物理方位，同样受到五行极大的影响。</p>
+      <h3 style="color:var(--pb)">✈️ 第三版块：全球视野与高维锚点</h3>
+      <p style="margin-bottom:16px">作为跨国学术或高端医疗从业者，你涉足的全球方位同样受到五行极大的影响。</p>
+      
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px">
         <div style="background:rgba(217,92,67,0.05);border:1px solid rgba(217,92,67,0.3);padding:20px;border-radius:6px">
           <strong style="color:var(--fire);font-size:0.95rem;display:block;margin-bottom:8px">🌏 南半球火旺地 / 东半球木旺地（S级推荐）</strong>
-          <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);line-height:1.8">代表区域：新加坡节点、日本亚太节点（AWS Tokyo/Osaka）、澳洲悉尼节点。<br>战略意义：木火交汇，不仅利于本人亲身涉足，更极度适合将这些区域作为你核心业务服务器集群的数据据点。新加坡的金融科技生态与你的财杀格局尤为契合。</p>
+          <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);line-height:1.8">代表区域：新加坡、澳洲悉尼/墨尔本。<br>战略意义：木火交汇，不仅利于本人亲身涉足，更极度适合作为你学术进修或考取国际权威执照的锚点。新加坡的医疗与商业生态与你的财杀格局尤为契合。</p>
         </div>
         <div style="background:rgba(136,176,139,0.05);border:1px solid rgba(136,176,139,0.3);padding:20px;border-radius:6px">
           <strong style="color:var(--wood);font-size:0.95rem;display:block;margin-bottom:8px">🌏 北美东岸极木之地（A级推荐）</strong>
-          <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);line-height:1.8">代表区域：美国东海岸（纽约/波士顿节点），加拿大东部（多伦多/蒙特利尔）。<br>战略意义：北美东岸偏木，西岸偏金水。在区域或节点选取上向东、向南倾斜，可化解风控限流（化杀为用）。东岸的数字内容市场与你偏财的宏观格局高度匹配。</p>
+          <p style="font-size:0.85rem;color:rgba(224,228,232,0.8);line-height:1.8">代表区域：美国东海岸（如波士顿、纽约等医疗科研重镇）。<br>战略意义：北美东岸偏木，西岸偏金水。在区域选取上向东、向南倾斜，可化解风控（化杀为用）。东岸的高精尖医学圈与你偏财的宏观格局高度匹配。</p>
         </div>
         <div style="background:rgba(194,200,209,0.05);border:1px solid rgba(194,200,209,0.2);padding:20px;border-radius:6px">
           <strong style="color:rgba(224,228,232,0.6);font-size:0.95rem;display:block;margin-bottom:8px">🌏 西方重金之地（避让区）</strong>
-          <p style="font-size:0.85rem;color:rgba(224,228,232,0.6);line-height:1.8">代表区域：西欧（英国/德国/北欧）。<br>战略意义：金生水极旺。若将核心流量池或开发团队放在此区，极容易遇到各种严苛的平台合规审核（七杀无制），花费巨大且转化周期极其漫长。建议欧洲业务布局优先选南欧（西班牙/意大利），火气稍旺。</p>
+          <p style="font-size:0.85rem;color:rgba(224,228,232,0.6);line-height:1.8">代表区域：西欧（英国/德国/北欧）。<br>战略意义：金生水极旺。若将核心精力放在此区，极容易遇到各种严苛的体制门槛或合规审核（七杀无制），花费巨大且转化周期极其漫长。</p>
         </div>
       </div>
     </div>
@@ -1257,7 +1215,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
 
 <div class="verdict">
   <div class="verdict-title-wrapper" style="display:flex;align-items:center;justify-content:center;gap:24px;margin-bottom:36px">
-    <svg width="120" height="40" viewBox="0 0 300 100" style="opacity:0.85;filter:drop-shadow(0 0 10px rgba(176,184,200,0.4))">
+    <svg width="100" height="40" viewBox="0 0 300 100" style="opacity:0.85;filter:drop-shadow(0 0 10px rgba(176,184,200,0.4))">
       <path d="M280 50 L100 45 L100 55 Z" fill="url(#bladeGrad)"/>
       <line x1="100" y1="50" x2="280" y2="50" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
       <path d="M100 20 L110 50 L100 80 L90 50 Z" fill="#B0B8C8"/>
@@ -1266,7 +1224,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
       <defs><linearGradient id="bladeGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E0E4E8"/><stop offset="50%" stop-color="#A4B2C6"/><stop offset="100%" stop-color="#5C82A6"/></linearGradient></defs>
     </svg>
     <div class="verdict-kw" style="margin-bottom:0">寒渊试剑</div>
-    <svg width="120" height="40" viewBox="0 0 300 100" style="opacity:0.85;filter:drop-shadow(0 0 10px rgba(176,184,200,0.4));transform:scaleX(-1)">
+    <svg width="100" height="40" viewBox="0 0 300 100" style="opacity:0.85;filter:drop-shadow(0 0 10px rgba(176,184,200,0.4));transform:scaleX(-1)">
       <path d="M280 50 L100 45 L100 55 Z" fill="url(#bladeGrad)"/>
       <line x1="100" y1="50" x2="280" y2="50" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
       <path d="M100 20 L110 50 L100 80 L90 50 Z" fill="#B0B8C8"/>
@@ -1277,7 +1235,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
   <div class="verdict-body">
     冰河奔流，底色极寒，你是一把正待淬火的精钢剑。<br>
     水火相激的命局，注定了你生来就是要打破成规、重构底层的破壁人。<br>
-    用极深的底层逻辑斩断混沌，用跨界破局的野心点燃烈火。<br>
+    用极深的专业逻辑斩断混沌，用跨界破局的野心点燃烈火。<br>
     只要紧紧握住南方那轮不灭的太阳，辅以坚实的木之护城河，<br>
     世俗的寒潮终将为你让路，见证这把出鞘利刃的盖世锋芒。
   </div>
@@ -1293,7 +1251,7 @@ html,body{background:var(--bg);color:var(--text);font-family:'Noto Serif SC',ser
   <div class="footer-txt">
     本报告依据八字原局五行生克推演精算而成<br>
     核心底层逻辑：严惩 AI 幻觉 · 代码级玄学推演<br>
-    仅供命主个人参考，不构成任何具体投资、法律决策建议
+    仅供命主个人参考，不构成任何具体投资、医学、法律决策建议
   </div>
 </div>
 
@@ -1479,7 +1437,7 @@ document.addEventListener('mouseout',e=>{if(e.target.closest('.anchor'))hideTool
   ro.observe(cv);resize();loop();
 })();
 
-/* ── 运势折线图（修正后数据）── */
+/* ── 运势折线图 ── */
 (function(){
   const canvas=document.getElementById('fortuneChart');
   if(!canvas||typeof Chart==='undefined')return;
@@ -1492,7 +1450,7 @@ document.addEventListener('mouseout',e=>{if(e.target.closest('.anchor'))hideTool
     {yr:2049,lbl:'庚午大运 ★★',score:9.8,desc:'55岁绝对红利期！南方火运，丙火暖局功能发挥到极致。七杀与午火正官双火并临，跨界帝国彻底成型，行业威望登峰造极。'},
     {yr:2059,lbl:'己巳大运',score:8.5,desc:'65岁荣退期。火土相生，财富自由，版图稳固，宜退居幕后享受版图红利。'}
   ];
-  const nowIdx=2;// 癸酉大运
+  const nowIdx=2;
   const customPlugin={
     id:'customLine',
     afterEvent:(chart,args)=>{
